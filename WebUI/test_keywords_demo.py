@@ -43,10 +43,9 @@ class TestKeyWords(object):
     def quit_browser(self):
         self.driver.quit()
 
+
 if __name__ == "__main__":
     tk = TestKeyWords("Chrome", "http://www.jd.com")
     tk.input_text('id', 'kw', 'pure storage')
     tk.click_element('id', 'su', )
     tk.quit_browser()
-
-

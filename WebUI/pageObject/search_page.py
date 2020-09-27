@@ -26,9 +26,13 @@ class SearchPage(BasePage):
         self.click_element()
         self.quit_browser()
 
+
 if __name__ == "__main__":
     url = "http://www.baidu.com"
     driver = webdriver
+    # here the input design here
     sp = SearchPage(driver, 'kw', 'su')
+    # here is the search number
     sp.check(url, 'pure storage')
+
 

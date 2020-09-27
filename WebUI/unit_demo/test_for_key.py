@@ -5,11 +5,11 @@ from ddt import ddt, data, unpack
 
 @ddt
 class TestForKey(unittest.TestCase):
-
-        # every test case will be run once
+        # every test case will be run
         def setUp(self):
             self.tk = TestKeyWords("Chrome", "http://www.baidu.com")
             print('SetUp')
+
         # every test case will be run once
         def tearDown(self):
             self.tk.quit_browser()
@@ -23,6 +23,7 @@ class TestForKey(unittest.TestCase):
             self.tk.input_text(locator, "kw", input_value)
             self.tk.click_element(locator, "su")
             sleep(1)
+
 
 if __name__ == "__main__":
     unittest.main()

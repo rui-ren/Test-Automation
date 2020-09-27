@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 option = webdriver.ChromeOptions()
 option.add_argument('disable-infobars')
 option.add_argument('headless')
-# generate a chromedriver
+# generate a chrome driver
 driver = webdriver.Chrome(options=option)
 # use the get method to access the url
 
