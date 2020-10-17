@@ -1,2 +1,2 @@
 # automated-testing
-CI/CD, Selenium, DevOps
+CI/CD, Selenium, DevOps, Docker
