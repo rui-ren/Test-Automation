@@ -16,13 +16,11 @@ class WriteConfig(object):
         config.write(configfile)
 
 class ReadConfig(object):
-
     @staticmethod
     def get_config(config_path, section, option):
         config = configparser.ConfigParser()
         config.read(config_path, encoding='utf-8')
         return config[section][option]
-
 
 if __name__ == "__main__":
     if not os.walk('../config'):

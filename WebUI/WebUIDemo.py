@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
@@ -23,3 +22,4 @@ WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, '6')))
 # click pure storage
 driver.find_element_by_xpath('//*[@id="6"]/h3/a').click()
 driver.quit()
+

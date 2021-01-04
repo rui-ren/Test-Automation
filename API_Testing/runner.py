@@ -2,10 +2,9 @@
 Generate the HTML file report
 """
 
-import os
 import unittest
 from HtmlTestRunner import HTMLTestRunner
-from test_case.test_http_request import TestHttpRequest
+from .test_cases.test_http_request import TestHttpRequest
 from API_Testing.utils.project_path import *
 
 suite = unittest.TestSuite()
