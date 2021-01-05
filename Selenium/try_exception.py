@@ -4,11 +4,13 @@
 # and you can print the failure as well!
 """
 
-
 try:
     with open("test1.txt", 'r') as file:
         file.readlines()
    
-except:
-    print("Some how there is a failure in try long !")
-    
+except Exception as e:
+    print(e)
+    # print("here is a failure here!")
+
+finally:
+    print("running whenever it passes or error!")
